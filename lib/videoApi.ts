@@ -1,9 +1,8 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { VideoCopyStatus, VideoStatus } from "./types";
 
-const API_KEY = "HMS7dMgGTT5CvkRBmnalmgAIwBquAwUwsQws7v-J";
 const headers = {
-  "ganos-api-key": API_KEY,
+  "ganos-api-key": process.env.NEXT_PUBLIC_GANOS_API_KEY,
   "Content-Type": "application/json",
 };
 

@@ -101,7 +101,7 @@ function VideoUploader() {
               type="text"
               value={videoLink}
               onChange={(e) => setVideoLink(e.target.value)}
-              placeholder="Enter S3 video link"
+              placeholder="Enter any download video link"
             />
             <Button onClick={handleUpload} disabled={isUploading || !videoLink}>
               {isUploading ? "Uploading..." : "Upload Video"}
