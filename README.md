@@ -1,6 +1,6 @@
 # Video Avatar Generator
 
-A modern web application that leverages GAN.ai's API to create and manage video avatars.
+A modern web application that leverages GAN.AI's API to create and manage video avatars.
 
 ## Features
 
@@ -22,7 +22,7 @@ A modern web application that leverages GAN.ai's API to create and manage video 
 
 - Node.js 16+
 - npm or yarn
-- GAN.ai API key
+- GAN.AI API key
 
 ### Environment Setup
 
@@ -32,7 +32,7 @@ Create a `.env` file in the root directory:
 NEXT_PUBLIC_GANOS_API_KEY=your_api_key_here
 ```
 
-Get your API key from [here](https://playground.gan.ai).
+Get your API key from [[https://playground.gan.ai](https://playground.gan.ai).
 
 ## Installation
 
