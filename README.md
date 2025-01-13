@@ -32,7 +32,7 @@ Create a `.env` file in the root directory:
 NEXT_PUBLIC_GANOS_API_KEY=your_api_key_here
 ```
 
-Get your API key from [[https://playground.gan.ai](https://playground.gan.ai).
+Get your API key from [https://playground.gan.ai](https://playground.gan.ai).
 
 ## Installation
 
@@ -68,6 +68,19 @@ The application integrates with GAN.ai's Avatar API and provides the following e
 3. Generate video copies by providing custom text
 4. Monitor the generation status
 5. Download or view the generated video
+
+## Code Structure and Flow
+
+### Project Structure
+
+- /app
+- /components
+- /avatar-creation # Avatar creation and management components
+- /ui # Reusable UI components
+- /show # Utility component for conditional rendering
+- /lib # Core utilities and API integrations
+- layout.tsx # Root layout component
+- page.tsx # Main application page
 
 ## Contributing
 

@@ -20,6 +20,10 @@ export const videoApi = createApi({
         method: "POST",
         body: {
           ...body,
+          // "avatar_webhook": {
+          // add the value of your webhook url here
+          //   "webhook_url": "<string>"
+          // }
           bypass: {
             bypass_consent: true,
             bypass_voice_creation: false,
@@ -64,6 +68,17 @@ export const videoApi = createApi({
         params: { inference_id },
       }),
     }),
+    listAvatars: builder.query<
+      { total_avatars: number; avatars: any[] },
+      { skip: number; limit: number }
+    >({
+      query: ({ skip, limit }) => ({
+        url: "list",
+        headers,
+        method: "GET",
+        params: { skip, limit },
+      }),
+    }),
   }),
 });
 
@@ -72,4 +87,5 @@ export const {
   useCheckStatusQuery,
   useCheckVideoCopyStatusQuery,
   useGenerateVideoCopyMutation,
+  useListAvatarsQuery,
 } = videoApi;
